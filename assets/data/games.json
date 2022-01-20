@@ -1,0 +1,61 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "game_title": "Back 4 blood",
+            "price": "59,99 €",
+            "poster_path": "./assets/img/back_4_blood.png",
+            "alt": "Back for blood game cover"
+        },
+        {
+            "id": 2,
+            "game_title": "Resident evil village",
+            "price": "29,99 €",
+            "poster_path": "./assets/img/residentevilvillage.png",
+            "alt": "Resident evil village game cover"
+        },
+        {
+            "id": 3,
+            "game_title": "Spider-man Miles Morales",
+            "price": "59,99 €",
+            "poster_path": "./assets/img/spider-man.png",
+            "alt": "Spider-man Miles Morales game cover"
+        },
+        {
+            "id": 4,
+            "game_title": "The Last Of Us Part II",
+            "price": "59,99 €",
+            "poster_path": "./assets/img/the_last_of_us_p2.png",
+            "alt": "The Last Of Us Part two game cover"
+        },
+        {
+            "id": 5,
+            "game_title": "Riders republic",
+            "price": "39,99 €",
+            "poster_path": "./assets/img/riders_republic.png",
+            "alt": "Riders republic game cover"
+        },
+        {
+            "id": 6,
+            "game_title": "Cyberpunk 2077",
+            "price": "29,99 €",
+            "poster_path": "./assets/img/cyberpunk.png",
+            "alt": "Cyberpunk 2077 game cover"
+        },
+        {
+            "id": 7,
+            "game_title": "Rainbow six extraction",
+            "price": "49,99 €",
+            "poster_path": "./assets/img/rainbowsix.png",
+            "alt": "Rainbow six extraction edition game cover"
+        },
+        {
+            "id": 8,
+            "game_title": "Martha is dead",
+            "price": "29,99 €",
+            "poster_path": "./assets/img/marthaisdead.png",
+            "alt": "Martha is dead game cover"
+        }
+        
+    ]
+}

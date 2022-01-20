@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    background-image: url(../img/fond.png);
+    background-repeat: repeat;
+}
+/* On applique la forme au header et son contenu */
+.header {
+    display: flex;
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #4548A1;
+    justify-content:space-around;
+}
+.header a, .cart {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+/* On ajoute une media query pour mettre le header en responsive */
+@media screen and (max-width: 500px) {
+    .header {
+        display: block;
+        text-align: left;
+    }
+}
+/* On applique la forme à chacun des grid-item */
+.grid-item{
+    background-color: #7C7C7C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/* On créer une classe bg-customBlue pour ajouter la couleur et son effet de hover */
+.bg-customBlue:hover{
+    background-color: #5357c0;
+    color: white;
+}
+.bg-customBlue{
+    background-color: #4548A1;
+    color: white;
+}
+.gameImg{
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+.gameText{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.gameTitle{
+    font-weight: bold;
+}
+/* forme du footer */
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    background-color: #4548A1;
+    
+    overflow: hidden;
+    padding: 20px 10px;
+    
+}
+footer a {
+    display: flex;
+    justify-content:space-around;  
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/* On applique la forme à la div du message de confirmation de l'ajout d'un produit dans le panier */
+.addedToCart{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    background-color: white;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    right: 0%;
+    transition: opacity 0.3s ease;
+}
+/* On applique la forme au contenu du panier */
+#cartContent {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    background-color: white;
+    padding: 10px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    right: 0%;
+    transition: opacity 0.3s ease;
+}
+/* On ajoute une classe qui fera apparaître le message de confirmation de l'ajout d'un produit dans le panier */
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.imgM{
+    height: auto;
+    max-width: 100%;
+}
