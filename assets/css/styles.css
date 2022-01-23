@@ -47,6 +47,10 @@ body{
     text-align: center;
     margin: auto;
 }
+.gameCartImg {
+    height: 200px;
+    width: 150px;
+}
 .gameText{
     display: flex;
     margin: 10px;
@@ -90,9 +94,8 @@ footer a {
 }
 /* On applique la forme au contenu du panier */
 #cartContent {
-    opacity: 0;
+    /* opacity: 0; */
     pointer-events: none;
-    position: fixed;
     background-color: white;
     padding: 10px 25px;
     border: 2px solid black;
@@ -108,4 +111,9 @@ footer a {
 .imgM{
     height: auto;
     max-width: 100%;
+}
+.command{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }

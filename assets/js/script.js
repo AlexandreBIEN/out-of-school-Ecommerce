@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Le DOM est chargé");
 
     // On récupère les informations du json
-    fetch('assets/data/games.json')
+    
+    /* fetch('assets/data/games.json')
         .then(response => response.json())
         .then((jsonGames) => {
             jsonGames.games.map((game) => {
@@ -13,11 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 let poster = game.poster_path;
                 let alt = game.alt;
 
-                /* let test = () => {
+                let test = () => {
                     console.log('test marche btn')
-                }; */
+                };
 
                 // On écrit le code html avec les variables ci-dessus pour chaque produit
+                
                 let gameToInject = `
         <div class="col-lg-3 gx-5 gy-5">
             <div class="grid-item">
@@ -28,19 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     `;
-                
+    
                 // On met le code html gameToInject dans la div ayant pour ID : #gameList
+                
                  document.getElementById('gameList').innerHTML += gameToInject;
-                /* document.getElementsByTagName('js-btn').addEventListener('click', function() {
+                document.getElementsByTagName('js-btn').addEventListener('click', function() {
                     console.log('test ça marche')
-                }); */
+                });
                 test();
             });
-        });
+        }); */
 
     let myCart = document.getElementById('cart');
     let addToCart = document.getElementById('addToCartId');
     let added = document.getElementById('addedToCartMsg');
+
+    document.getElementsByTagName('js-btn').addEventListener('click', function() {
+        console.log('test ça marche')
+    });
 
     // addToCart.addEventListener("click", function() {
 
@@ -58,4 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('hiding div')
         added.classList.remove('show');
     }
+
+    let addToCartBtn = document.getElementsByClassName('js-btn');
+    for (let i = 0; i < addToCartBtn.length; i++){
+        let btnClicked = addToCartBtn[i]
+        console.log(i)
+        btnClicked.addEventListener('click', addToCartClicked)
+    }
+
+    function addToCartClicked(event) {
+        let button = event.target
+        let shopItem = button.parentElement.parentElement
+        let gameTitle = shopItem.getElementsByClassName('gameTitle').innerText
+
+        console.log(gameTitle)
+    }
+
+
+
+    let removeCartItemBtn = document.getElementsByClassName('');
+
 });

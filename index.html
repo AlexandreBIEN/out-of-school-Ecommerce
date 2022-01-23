@@ -51,19 +51,95 @@
         <div class="addedToCart shadow" id="addedToCartMsg"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="green"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
             L'article a été ajouté à votre panier</div>
         <!-- Affichage du contenu du panier -->
-        <!-- <div class="cartContent shadow" id="cartContent">
+
+        <div class="cartContent shadow" id="cartContent">
+            <button type="button" class="btn-close" aria-label="Close"></button>
             <div class="container">
-                <div class="row">
-                    <div class="col"><div class="imgM"><img class="gameImg" src="./assets/img/back_4_blood.png" alt="back 4 blood game cover"></div></div>
-                    <div class="col"><span class="gameText gameTitle">Game's title</span><span class="gameText gamePrice">game's price</span></div>
-                    <div class="col">test 3</div>
+                <div class="row border-bottom">
+                    <div class="col"><div class="imgM"><img class="my-2 gameCartImg" src="./assets/img/back_4_blood.png" alt="back 4 blood game cover"></div></div>
+                    <div class="col"><span class="gameText gameTitle">Back 4 Blood</span><span class="gameText gamePrice">59,99 €</span></div>
+                    <div class="col"><button type="button" class="btn btn-danger">Supprimer</button></div>
                 </div>
-                
+                <div class="row border-bottom">
+                    <div class="col"><div class="imgM"><img class="my-2 gameCartImg" src="./assets/img/residentevilvillage.png" alt="Resident evil village game cover"></div></div>
+                    <div class="col"><span class="gameText gameTitle">Resident evil village</span><span class="gameText gamePrice">29,99 €</span></div>
+                    <div class="col"><button type="button" class="btn btn-danger">Supprimer</button></div>
+                </div>
+                <div class="command">
+                    <div class="my-2">Frais de livraison estimés : Gratuit</div>
+                    <div class="fw-bold my-2">Total : 89,98 €</div>
+                    <button class="btn btn-primary btn-lg" disabled>Commander</button>
+                </div>
             </div>
-        </div> -->
+        </div>
         <div class="container px-4 mb-5">
             <div class="row" id="gameList">
                 <!-- Div où se trouve les produits -->
+
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/back_4_blood.png" alt="Back for blood game cover">
+                        <span class="gameText gameTitle border-top">back 4 blood</span>
+                        <span class="gameText gamePrice">59,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/residentevilvillage.png" alt="Resident evil village game cover">
+                        <span class="gameText gameTitle border-top">Resident evil village</span>
+                        <span class="gameText gamePrice">29,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/spider-man.png" alt="Spider-man Miles Morales game cover">
+                        <span class="gameText gameTitle border-top">Spider-man Miles Morales</span>
+                        <span class="gameText gamePrice">59,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/the_last_of_us_p2.png" alt="The Last Of Us Part two game cover">
+                        <span class="gameText gameTitle border-top">The Last Of Us Part II</span>
+                        <span class="gameText gamePrice">59,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/riders_republic.png" alt="Riders republic game cover">
+                        <span class="gameText gameTitle border-top">Riders republic</span>
+                        <span class="gameText gamePrice">39,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/cyberpunk.png" alt="Cyberpunk 2077 game cover">
+                        <span class="gameText gameTitle border-top">Cyberpunk 2077</span>
+                        <span class="gameText gamePrice">29,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/rainbowsix.png" alt="Rainbow six extraction edition game cover">
+                        <span class="gameText gameTitle border-top">Rainbow six extraction</span>
+                        <span class="gameText gamePrice">49,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 gx-5 gy-5">
+                    <div class="grid-item">
+                        <img class="gameImg shadow" src="./assets/img/marthaisdead.png" alt="Martha is dead game cover">
+                        <span class="gameText gameTitle border-top">Martha is dead</span>
+                        <span class="gameText gamePrice">29,99 €</span>
+                        <div class="d-grid gap-2"><button class="js-btn btn bg-customBlue" id="addToCartId" type="button" >AJOUTER AU PANIER</button></div>
+                    </div>
+                </div>
                 
             </div>
         </div> 
